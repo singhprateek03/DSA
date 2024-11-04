@@ -2,7 +2,7 @@ public class LinearSearchInString {
     public static void main(String[] args) {
         String name = "Alex";
         char target = 'e';
-
+        System.out.println(linearSearchString("Target is present in the String? = "+name,target));
     }
 
     static boolean linearSearchString(String str, char target){
