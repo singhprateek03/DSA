@@ -3,7 +3,15 @@ public class EvenDigit {
         int[] nums = {12, 345, 2, 6, 7896};
         System.out.println(+findNumbers(nums)+" Even number present in the array.");
         System.out.println("Negative value is "+digit(-1000)+" digit");
-        System.out.println(digit(0));
+        System.out.println(digit2(456784));
+    }
+
+    // Shortcut to find the digit value
+    static int digit2(int num){
+        if (num < 0){
+            num *= -1;
+        }
+        return (int)(Math.log10(num))+1;
     }
 
     static int findNumbers(int[] nums){
